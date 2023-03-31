@@ -38,7 +38,7 @@ const en = {
     passwordFieldLabel: "Password",
     emailFieldPlaceholder: "Enter your email address",
     passwordFieldPlaceholder: "Super secret password here",
-    tapToSignIn: "Tap to sign in!",
+    tapToSignIn: "Chụp ảnh",
     hint: "Hint: you can use any email address and your favorite password :)",
   },
   demoNavigator: {

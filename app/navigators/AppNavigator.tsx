@@ -21,6 +21,7 @@ import {
   LoginScreen, // @demo remove-current-line
   WelcomeScreen,
 } from "../screens"
+import { CheckCameraScreen } from "../screens/CheckCameraScreen"
 import { DemoNavigator, DemoTabParamList } from "./DemoNavigator" // @demo remove-current-line
 import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
 
@@ -80,7 +81,8 @@ const AppStack = observer(function AppStack() {
         </>
       ) : (
         <>
-          <Stack.Screen name="Login" component={LoginScreen} />
+          {/* <Stack.Screen name="Login" component={LoginScreen} /> */}
+          <Stack.Screen name="Login" component={CheckCameraScreen} />
         </>
       )}
       {/* @demo remove-block-end */}

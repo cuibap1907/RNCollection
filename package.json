@@ -5,7 +5,7 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "react-native start",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator 'iPhone 14' ",
     "android": "react-native run-android --active-arch-only",
     "test:detox": "detox test -c ios.sim.debug",
     "build:detox": "detox build -c ios.sim.debug",
@@ -63,7 +63,13 @@
     "react": "18.0.0",
     "react-native": "0.69.6",
     "react-native-bootsplash": "4.3.2",
+    "react-native-fs": "^2.18.0",
+    "react-native-geolocation-service": "^5.3.1",
     "react-native-gesture-handler": "~2.5.0",
+    "react-native-image-marker": "^0.6.3",
+    "react-native-image-picker": "4.3.0",
+    "react-native-modal": "^13.0.1",
+    "react-native-permissions": "^3.8.0",
     "react-native-reanimated": "~2.9.1",
     "react-native-safe-area-context": "4.3.4",
     "react-native-screens": "3.15.0",
@@ -111,6 +117,7 @@
     "metro-source-map": "0.71.1",
     "mocha": "6",
     "patch-package": "6.4.7",
+    "pod-install": "0.1.38",
     "postinstall-prepare": "1.0.1",
     "prettier": "2.6.2",
     "query-string": "^7.0.1",
@@ -124,6 +131,13 @@
     "webpack": "4",
     "webpack-dev-server": "^3"
   },
+  "reactNativePermissionsIOS": [
+    "Camera",
+    "MediaLibrary",
+    "Microphone",
+    "PhotoLibrary",
+    "PhotoLibraryAddOnly"
+  ],
   "resolutions": {
     "@types/react": "^17",
     "@types/react-dom": "^17"
